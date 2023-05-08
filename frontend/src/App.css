@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@500;700&family=Nunito:wght@400;500;700&family=Poppins:wght@400;500;700;900&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 100;
+  color: #ccc5b9;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.routes-wrap {
+  min-height: 1040px;
+  flex: 1 0 auto;
+  position: relative;
+}

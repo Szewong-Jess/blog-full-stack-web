@@ -1,0 +1,52 @@
+.blog-container {
+  min-height: 600px;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px 30px;
+  flex-flow: column nowrap;
+  justify-content: center;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  box-shadow: 4px 2px 4px 6px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 20px;
+}
+
+.blog-container,
+.blog-row,
+.blog-row-checkbox,
+.blog-btn-row {
+  display: flex;
+}
+
+.blog .featured {
+}
+
+.blog-row {
+  flex: 1 1 auto;
+}
+
+.blog-row-checkbox {
+  flex: 0 1 auto;
+}
+
+.blog-row label {
+  flex: 0 1 20%;
+}
+
+.blog-row input[type="text"],
+.blog-row textarea,
+.blog-row span {
+  flex: 0 1 80%;
+}
+
+.blog-row span {
+  padding-left: 20px;
+}
+
+.blog-btn-row {
+  gap: 10px;
+}

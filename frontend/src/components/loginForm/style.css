@@ -1,0 +1,73 @@
+.login-form {
+  min-height: 450px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  flex-flow: column nowrap;
+  justify-content: center;
+  position: relative;
+  gap: 30px;
+  padding: 30px;
+}
+
+.login-form::before {
+  content: "Login";
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  background-color: #bad1c2;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.login-form,
+.form-row {
+  display: flex;
+}
+
+.form-row,
+.form-btn {
+  flex: 0 1 30%;
+}
+
+.form-row label {
+  flex: 0 1 20%;
+  height: 35px;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.form-row input {
+  flex: 0 1 80%;
+}
+
+.form-row input:focus {
+  outline: none !important;
+  border: 1px solid #749f82;
+  box-shadow: 0 0 10px #749f82;
+  border-radius: 2px;
+}
+
+.form-btn {
+  border: none;
+  background-color: #bad1c2;
+  width: 100%;
+  max-width: 150px;
+  margin: 40px auto 0;
+  padding: 10px 0;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: #749f82;
+}

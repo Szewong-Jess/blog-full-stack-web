@@ -1,0 +1,9 @@
+.message-container {
+  color: rgb(66, 66, 66);
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  min-height: 800px;
+  padding: 80px 20px;
+  background-color: rgb(219, 226, 227);
+}

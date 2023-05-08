@@ -1,0 +1,10 @@
+.login-container {
+  display: flex;
+  position: relative;
+  flex-wrap: column nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 200px 20px 0;
+}

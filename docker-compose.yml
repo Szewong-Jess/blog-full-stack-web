@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  backend:
+    build: ./backend
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    working_dir: /app
+    expose:
+      - "5000"
+    ports:
+      - "5000:5000"
+    command: npm run dev
+  frontend:
+    depends_on:
+      - backend
+    image: node:16-slim
+    volumes:
+      - ./frontend:/app
+    working_dir: /app
+    command: sh -c "npm rebuild esbuild && yarn dev"
+    ports:
+      - "3000:3000"
